@@ -1,17 +1,19 @@
-require('dotenv').config({path: '.env.node'});
+require('dotenv').config({path: __dirname + '/.env.node'});
 const xrpl = require('xrpl')
 const { encodeReportDataToURI } = require('./nftURI'); // Import the encodeReportDataToURI function
 
 const walletSecret = process.env.WALLET_SECRET; // Accessing the wallet secret from environment variables
 const xrplWsUrl = process.env.XRPL_WS_URL; // Accessing the XRPL WebSocket URL from environment variables
 
-// Parse command-line argument as JSON
+
+/* // Parse command-line argument as JSON
 const jsonData = process.argv[2] ? JSON.parse(process.argv[2]) : null;
 
 if (!jsonData) {
   console.error("No JSON data provided.");
   process.exit(1);
 }
+*/
 
 async function checkTransactionStatus(client, txHash) {
     try {
@@ -61,8 +63,8 @@ async function mintToken(wallet, client, uri) {
     const wallet = xrpl.Wallet.fromSeed(walletSecret)
     console.log(`Using address ${wallet.classicAddress}`)
 
-    /* Example report data
-    const exampleReportData = {
+    // Example report data
+    const jsonData = {
         farmerId: "FARM12345",
         location: "Location A",
         livestockCount: 100,
@@ -70,7 +72,6 @@ async function mintToken(wallet, client, uri) {
         feedConsumption: { corn: 1000, soybean: 500 }, // kg per day
         methaneEmissions: 200 // kg per day
     };
-    */
 
     // Generate the URI from the report data
     const uri = encodeReportDataToURI(jsonData)
