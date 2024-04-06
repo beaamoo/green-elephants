@@ -1,6 +1,8 @@
-# green-elephants
+# AgriChain Ledger: Tokenizing Emission Reports for Sustainable Farming on the XRP Ledger
 
-### Project Title: AgriChain Ledger: Tokenizing Emission Reports for Sustainable Farming on the XRP Ledger
+### Paris Blockchain Hackathon 2024 Team: Green Elephants
+
+**Team members**: Adnan Bhanji, Beatrice Mossberg, Khaled Akel, Hussein Soliman
 
 ### Abstract:
 Developed for the Paris Blockchain Hackathon 2024, AgriChain Ledger aims to revolutionize the agricultural sector's approach to environmental accountability and carbon emission reporting by leveraging blockchain technology. This project proposes a novel system where emission reports from farmers are tokenized on the XRP Ledger, ensuring data transparency and availability for corporations seeking to fulfill their sustainability mandates. Given the critical need for corporations to report carbon emissions throughout their production chains, AgriChain Ledger facilitates this process by incentivizing farmers to upload their emission data, rewarding them with XRP payments. Recognizing the demographic challenges, including the average age of farmers and their varying levels of technical proficiency, the project integrates a user-friendly chatbot assistant via the WhatsApp platform, powered by the ChatGPT API, to streamline the data entry process.
@@ -33,4 +35,4 @@ The global agricultural sector is under increasing pressure to demonstrate envir
 - A model for leveraging blockchain and AI technologies to address environmental reporting challenges in other sectors.
 
 ### Conclusion:
-AgriChain Ledger represents a groundbreaking approach to integrating blockchain technology with AI-driven interfaces to address the critical challenge of carbon emission reporting in agriculture. By simplifying the data collection process and incentivizing participation, this project not only aids in the fulfillment of corporate sustainability goals but also empowers farmers, encouraging them to contribute to global environmental efforts.
+AgriChain Ledger represents a user-centric approach to integrate blockchain technology with AI-driven interfaces to address the critical challenge of carbon emission reporting in agriculture. By simplifying the data collection process and incentivizing participation, this project not only aids in the fulfillment of corporate sustainability goals but also empowers farmers, encouraging them to contribute to global environmental efforts.
