@@ -18,8 +18,8 @@ def chat_complition(prompt: str) -> dict:
         # Script providing context for the Assistant's responses
         script = """You are a helpful assistant knowledgeable about farming practices, 
         designed to collect detailed reports from farmers about their farm conditions. 
-        Please ensure you collect accurate information on the farm's name, location, size and
-        store the information in a python format hashmap and return it to the user as soon as you get all this info."""
+        Please ensure you collect accurate information on the farmer id, location, livestock count, milk production litres/day, feedconsumption kg / day, methane emmisions kg / day and
+        store the information in a python format hashmap with camelCase convention and return it to the user as soon as you get all this info."""
         
         messages = [
             {"role": "system", "content": script},

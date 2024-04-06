@@ -3,6 +3,7 @@ import sys
 import os
 import re
 import json
+import subprocess
 
 
 # Adding the 'src' directory to the Python path
@@ -43,7 +44,11 @@ def receiveMessage():
             final_response = extract_hashmap(result['response'])
             # Convert the string to a hashmap (dictionary)
             hashmap = json.loads(extract_hashmap(result['response']))
+            # Call Node.js script and pass JSON data
             send_message(sender_id, final_response)
+            # Convert data to JSON string
+            json_data = json.dumps(hashmap)
+            subprocess.run(['node', '../nft-minting/mintNFT.js', json_data], check=True)
     except:
         pass
 
