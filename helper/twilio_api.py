@@ -4,10 +4,17 @@ from twilio.rest import Client
 # from dotenv import load_dotenv
 # load_dotenv()
 
-account_sid = os.getenv('TWILIO_SID')
-auth_token = os.getenv('TWILIO_TOKEN')
-client = Client(account_sid, auth_token)
+# Load environment variables
+with open('.env', 'r') as file:
+    for line in file:
+        key, value = line.strip().split('=', 1)
+        os.environ[key] = value
 
+# Access environment variables
+account_sid = os.environ.get('TWILIO_SID')
+auth_token = os.environ.get('TWILIO_TOKEN')
+# from_num = os.getenv('FROM')
+client = Client(account_sid, auth_token)
 
 def send_message(to: str, message: str) -> None:
     '''
