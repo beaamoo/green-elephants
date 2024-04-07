@@ -1,9 +1,10 @@
 # ignore env files
-*/.env.node
-**/.env.node
+*/.env
+**/.env
 /venv
 **/__pycache__
 .env
 /env
 .DS_Store
-/node_modules
+**/.DS_Store
+
