@@ -29,3 +29,5 @@ urllib3==1.26.15
 Werkzeug==2.2.3
 yarl==1.8.2
 zipp==3.15.0
+xrpl-py
+python-dotenv==0.19.2

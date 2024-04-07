@@ -2,3 +2,6 @@
 **/__pycache__
 .env
 /env
+.DS_Store
+*/node_modules
+.env.node_modules
